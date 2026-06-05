@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoiceLog</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --card: #fffdf8;
+      --text: #201a15;
+      --muted: #6f655a;
+      --accent: #a4542b;
+      --accent-strong: #7e3d1d;
+      --border: #e6dccf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #fff4dd 0, transparent 26rem),
+        radial-gradient(circle at bottom right, #eef6ea 0, transparent 24rem),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero,
+    .card {
+      background: rgba(255, 253, 248, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(32, 26, 21, 0.08);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--accent-strong);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fffdf8;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--accent-strong);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">VoiceLog</p>
+      <h1>VoiceLog App Information</h1>
+      <p>
+        QuickVoice nimmt deine Sprache auf, transkribiert sie per OpenAI Whisper und formatiert den Text per GPT in fünf Modi – mit deinem eigenen OpenAI-Schlüssel, ohne Abo.
+      </p>
+      <p class="muted">
+        Auf dieser Seite findest du die wichtigsten Links fuer Support und Datenschutz.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Support</h2>
+        <p>
+          Hilfe bei Fragen, Feedback, Fehlerberichten und In-App-Kauf-Themen.
+        </p>
+        <p>
+          <a class="button" href="./support/">Support ansehen</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Datenschutz</h2>
+        <p>
+          Informationen dazu, welche Daten VoiceLog speichert und wie damit umgegangen wird.
+        </p>
+        <p>
+          <a class="button" href="./privacy/">Datenschutzerklaerung lesen</a>
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      Kontakt: <a href="mailto:gibbons.22.puls@icloud.com">gibbons.22.puls@icloud.com</a><br>
+      Last updated: May 3, 2026
+    </footer>
+  </main>
+</body>
+</html>
