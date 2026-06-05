@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – VoiceLog</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1c1c1e;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5ea; background: #000000; }
+    a { color: #0a84ff; }
+    .muted { color: #98989d; }
+    .card { background: #1c1c1e; border-color: #2c2c2e; }
+    details { border-color: #2c2c2e; }
+    summary { background: #1c1c1e; }
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .75rem; }
+  a { color: #007aff; }
+  .muted { color: #6c6c70; font-size: .9rem; }
+  ol, ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .card {
+    border: 1px solid #e5e5ea;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    background: #f9f9fb;
+  }
+  details {
+    border: 1px solid #e5e5ea;
+    border-radius: 12px;
+    margin: .6rem 0;
+    overflow: hidden;
+  }
+  summary {
+    cursor: pointer;
+    padding: .85rem 1rem;
+    font-weight: 600;
+    background: #f9f9fb;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: #8e8e93; font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details > div { padding: 0 1rem 1rem; }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; }
+</style>
+</head>
+<body>
+
+<h1>QuickVoice – Support</h1>
+<p class="muted">Hilfe, häufige Fragen und Kontakt</p>
+
+<div class="card">
+QuickVoice nimmt deine Sprache auf, transkribiert sie per OpenAI Whisper und formatiert den Text per GPT in fünf Modi – mit deinem eigenen OpenAI-Schlüssel, ohne Abo.
+</div>
+
+<h2>Erste Schritte</h2>
+<ol>
+  <li>Bei <a href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> anmelden.</li>
+  <li>Unter <strong>Billing</strong> ein kleines Guthaben aufladen (Pay-as-you-go).</li>
+  <li>Unter <strong>API Keys</strong> einen neuen Schlüssel erstellen und kopieren.</li>
+  <li>In QuickVoice unter <strong>Einstellungen → OpenAI API Key</strong> einfügen und speichern.</li>
+  <li>Aufnahme starten, Modus wählen – fertig.</li>
+</ol>
+
+<h2>Häufige Fragen</h2>
+
+<details>
+  <summary>Was brauche ich, um QuickVoice zu nutzen?</summary>
+  <div>Einen eigenen OpenAI-API-Schlüssel und eine Internetverbindung. Transkription und Formatierung laufen über deinen OpenAI-Account; die App selbst hat kein Abo und keinen eigenen Server.</div>
+</details>
+
+<details>
+  <summary>Was kostet die Nutzung?</summary>
+  <div>Die App verlangt kein Abo. Es entstehen nur die nutzungsabhängigen Kosten deines OpenAI-Accounts (für Transkription und Formatierung). Du behältst die volle Kostenkontrolle direkt in deinem OpenAI-Dashboard – Tipp: Auto-Recharge eng begrenzen oder deaktivieren.</div>
+</details>
+
+<details>
+  <summary>Die Transkription schlägt fehl – was kann ich tun?</summary>
+  <div>
+    <ul>
+      <li>Internetverbindung prüfen.</li>
+      <li>API-Schlüssel in den Einstellungen prüfen (beginnt mit <code>sk-</code>).</li>
+      <li>In deinem OpenAI-Account prüfen, ob Guthaben vorhanden ist und der Schlüssel aktiv ist.</li>
+      <li>Aufnahme erneut versuchen – über die Schaltfläche „Erneut versuchen".</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary>Gibt es eine maximale Aufnahmelänge?</summary>
+  <div>Ja. Sehr lange Aufnahmen (etwa ab 25–30 Minuten) überschreiten das Größenlimit des Transkriptions-Dienstes und werden abgelehnt. Nimm in solchen Fällen kürzere Abschnitte auf.</div>
+</details>
+
+<details>
+  <summary>Namen oder Fachwörter werden falsch erkannt – was hilft?</summary>
+  <div>Trage sie unter <strong>Einstellungen → Benutzerwörter</strong> ein. Diese Begriffe werden der Spracherkennung als Hinweis mitgegeben und dadurch zuverlässiger erkannt.</div>
+</details>
+
+<details>
+  <summary>Welche Formatierungs-Modi gibt es?</summary>
+  <div>Professionell, Natürlich, Chat, Emoji und Markdown. Den Modus kannst du im Ergebnis jederzeit wechseln, ohne neu aufzunehmen.</div>
+</details>
+
+<details>
+  <summary>Wo werden meine Daten gespeichert?</summary>
+  <div>Schlüssel, Verlauf, Benutzerwörter und Einstellungen bleiben lokal auf deinem Gerät. Aufnahme und Text werden zur Verarbeitung direkt an OpenAI gesendet. Details in der <a href="privacy.html">Datenschutzerklärung</a>.</div>
+</details>
+
+<details>
+  <summary>Wie lösche ich Aufnahmen aus dem Verlauf?</summary>
+  <div>Im Verlauf nach links über einen Eintrag wischen und „Löschen" wählen, oder den Eintrag öffnen und dort löschen. Beim Deinstallieren der App werden alle lokalen Daten entfernt.</div>
+</details>
+
+<details>
+  <summary>Funktioniert QuickVoice offline?</summary>
+  <div>Aufnehmen ja, aber für Transkription und Formatierung ist eine Internetverbindung erforderlich, da diese über OpenAI laufen.</div>
+</details>
+
+<h2>Kontakt</h2>
+<p>
+  Frage, Fehler oder Wunsch? Schreib mir:
+  <!-- TODO: Kontakt-E-Mail eintragen -->
+  <a href="mailto:[deine-kontakt-email]">[deine-kontakt-email]</a>
+</p>
+<p class="muted">Bitte gib bei Problemen dein iOS-Modell, die iOS-Version und die App-Version (Einstellungen → Version) an.</p>
+
+<footer class="muted">© 2026 VoiceLog · <a href="privacy.html">Datenschutz</a></footer>
+
+</body>
+</html>
