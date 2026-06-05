@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – VoiceLog</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1c1c1e;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5ea; background: #000000; }
+    a { color: #0a84ff; }
+    .muted { color: #98989d; }
+    .card { background: #1c1c1e; border-color: #2c2c2e; }
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .5rem; }
+  a { color: #007aff; }
+  .muted { color: #6c6c70; font-size: .9rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .card {
+    border: 1px solid #e5e5ea;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    background: #f9f9fb;
+  }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="muted">QuickVoice · Stand: 5. Juni 2026</p>
+
+<div class="card">
+<strong>Kurzfassung:</strong> QuickVoice erhebt selbst keine personenbezogenen Daten und betreibt keinen eigenen Server. Deine Aufnahmen und Texte werden mit <em>deinem eigenen</em> OpenAI-Schlüssel direkt an OpenAI gesendet, um sie zu transkribieren und zu formatieren. Alles Übrige (Schlüssel, Verlauf, Einstellungen) bleibt lokal auf deinem Gerät.
+</div>
+
+<h2>Verantwortlicher</h2>
+<p>
+  <!-- TODO: Vollständigen Namen und Anschrift eintragen (für DSGVO erforderlich) -->
+  [Dein Name / deine Anschrift]<br>
+  Kontakt: <a href="mailto:gibbons.22.puls@icloud.com">[deine-kontakt-email]</a>
+</p>
+
+<h2>Welche Daten verarbeitet QuickVoice?</h2>
+<p>QuickVoice ist eine reine On-Device-App ohne eigenes Backend. Der Entwickler hat keinen Zugriff auf deine Daten und sammelt keine Nutzungs-, Analyse- oder Werbedaten.</p>
+
+<h2>Daten, die dein Gerät nicht verlassen</h2>
+<p>Folgende Daten werden ausschließlich lokal auf deinem Gerät gespeichert und nicht an den Entwickler übertragen:</p>
+<ul>
+  <li><strong>Dein OpenAI-API-Schlüssel</strong> – sicher im iOS-Schlüsselbund (Keychain).</li>
+  <li><strong>Aufnahmeverlauf</strong> – transkribierte und formatierte Texte deiner Aufnahmen.</li>
+  <li><strong>Benutzerwörter</strong> – eigene Begriffe zur besseren Spracherkennung.</li>
+  <li><strong>Einstellungen</strong> – z. B. Ausgabesprache, Standard-Modus, Darstellung.</li>
+</ul>
+<p>Diese Daten kannst du jederzeit in der App löschen. Beim Deinstallieren der App werden sie vollständig entfernt.</p>
+
+<h2>Übermittlung an OpenAI</h2>
+<p>
+  Zur Transkription und Formatierung sendet QuickVoice die Audioaufnahme und den daraus entstehenden Text mit deinem persönlichen API-Schlüssel direkt an die Dienste von OpenAI
+  (Whisper für die Transkription, GPT für die Formatierung). Diese Übertragung erfolgt über deinen eigenen OpenAI-Account.
+</p>
+<p>
+  Es findet keine Zwischenspeicherung auf einem Server des Entwicklers statt. Die Audiodatei wird nach der Transkription vom Gerät gelöscht. Welche Daten OpenAI verarbeitet und wie lange,
+  richtet sich nach den Bedingungen von OpenAI:
+  <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>.
+</p>
+
+<h2>Abruf von Formatierungsvorlagen</h2>
+<p>
+  QuickVoice lädt seine Formatierungs-Vorlagen (Text-Prompts und Modell-Liste) als statische Datei von GitHub
+  (<code>raw.githubusercontent.com</code>). Bei diesem Abruf erhält GitHub technisch notwendige Verbindungsdaten wie deine IP-Adresse.
+  Es werden dabei keine Inhalte deiner Aufnahmen übertragen. Hinweise: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.
+</p>
+
+<h2>Mikrofon</h2>
+<p>Der Mikrofonzugriff wird ausschließlich zum Aufnehmen genutzt, das du selbst startest. Die Berechtigung wird beim ersten Mal abgefragt und kann jederzeit in den iOS-Einstellungen widerrufen werden.</p>
+
+<h2>Kein Tracking, keine Werbung</h2>
+<p>QuickVoice enthält keine Analyse-Tools, kein Tracking, keine Werbung und keine Drittanbieter-SDKs zu diesen Zwecken.</p>
+
+<h2>Kinder</h2>
+<p>QuickVoice richtet sich nicht an Kinder und erhebt wissentlich keine Daten von Kindern.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Diese Datenschutzerklärung kann angepasst werden, wenn sich die App ändert. Die jeweils aktuelle Version ist unter dieser Adresse abrufbar; das Datum oben zeigt den letzten Stand.</p>
+
+<h2>Kontakt</h2>
+<p>Bei Fragen zum Datenschutz: <a href="mailto:gibbons.22.puls@icloud.com">[deine-kontakt-email]</a>.</p>
+
+<footer class="muted">© 2026 VoiceLog</footer>
+
+</body>
+</html>
