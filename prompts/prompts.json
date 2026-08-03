@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -29,7 +29,7 @@
     {"id": "gpt-5.6-sol",   "displayName": "GPT-5.6 Sol",   "description": "OpenAI's most powerful model for demanding tasks",   "inputPricePerMToken": 5.00, "outputPricePerMToken": 30.0}
   ],
   "transcriptionModels": [
-    {"id": "gpt-4o-mini-transcribe", "displayName": "GPT-4o mini Transcribe", "description": "More accurate than Whisper, optimal for most recordings", "pricePerMinute": 0.003},
-    {"id": "gpt-4o-transcribe",      "displayName": "GPT-4o Transcribe",      "description": "Highest accuracy, especially for difficult recordings",   "pricePerMinute": 0.006}
+    {"id": "gpt-transcribe",         "displayName": "GPT Transcribe",         "description": "Latest generation, most accurate for everyday recordings", "pricePerMinute": 0.0045},
+    {"id": "gpt-4o-mini-transcribe", "displayName": "GPT-4o mini Transcribe", "description": "Fast and affordable, good for straightforward recordings", "pricePerMinute": 0.003}
   ]
 }
