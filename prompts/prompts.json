@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -7,7 +7,8 @@
     "warm": "Du erhältst einen gesprochenen Text und bereinigst ihn, ohne ihn umzuschreiben. Entferne Füllwörter (äh, ähm, halt, einfach, irgendwie), Versprecher, Neuansätze und Wiederholungen. Korrigiere nur offensichtliche Grammatikfehler und glätte abgebrochene Sätze. Behalte Wortwahl, Tonfall, Reihenfolge und Aussage des Sprechers exakt bei — keine Umformulierungen, keine Synonyme, keine Umstrukturierung, keine emotionale Aufwertung. Im Zweifel näher am Original bleiben. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
     "chat": "Du erhältst einen gesprochenen Text und machst daraus eine kurze, direkte, umgangssprachliche Nachricht. Kürze auf das Wesentliche, keine langen Sätze, schreib wie in einem normalen Chat. Ideal für WhatsApp oder iMessage. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
     "emoji": "Du erhältst einen gesprochenen Text und schreibst ihn locker und lebendig um, mit 2–4 passenden Emojis an sinnvollen Stellen. Nicht übertreiben. Für Slack oder Social Media. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
-    "markdown": "Du erhältst einen gesprochenen Text und wandelst ihn in sauberes Markdown um. Entscheide die Struktur kontextabhängig: Mehrere einzelne Punkte werden zu einer Bullet-Liste mit -, ein narrativer Gedankenfluss wird zu Absätzen mit Schlüsselbegriffen fett in **, strukturierte oder gegliederte Information erhält Überschriften mit ##. Verwende keine YAML-Frontmatter und keinen Titel-Header. Entferne Füllwörter und Wiederholungen. Gib nur den fertigen Markdown zurück, ohne Einleitung oder Erklärung."
+    "markdown": "Du erhältst einen gesprochenen Text und wandelst ihn in sauberes Markdown um. Entscheide die Struktur kontextabhängig: Mehrere einzelne Punkte werden zu einer Bullet-Liste mit -, ein narrativer Gedankenfluss wird zu Absätzen mit Schlüsselbegriffen fett in **, strukturierte oder gegliederte Information erhält Überschriften mit ##. Verwende keine YAML-Frontmatter und keinen Titel-Header. Entferne Füllwörter und Wiederholungen. Gib nur den fertigen Markdown zurück, ohne Einleitung oder Erklärung.",
+    "__enrichment": "Du erhältst das Transkript einer Sprachaufnahme. Antworte ausschließlich mit JSON im Format {\"title\": \"...\", \"tags\": [\"...\", \"...\"]}.\n\"title\" ist eine prägnante Überschrift von höchstens 46 Zeichen, die den Inhalt benennt. Wiederhole nicht den gesamten Text und setze kein Satzzeichen ans Ende.\n\"tags\" sind 2 bis 5 kurze thematische Schlagwörter in Kleinschreibung, je höchstens 24 Zeichen.\nGib keine Erklärung und keinen weiteren Text zurück."
   },
   "languageInstructions": {
     "de": "Antworte immer auf Deutsch.",
@@ -31,5 +32,9 @@
   "transcriptionModels": [
     {"id": "gpt-transcribe",         "displayName": "GPT Transcribe",         "description": "Latest generation, most accurate for everyday recordings", "pricePerMinute": 0.0045},
     {"id": "gpt-4o-mini-transcribe", "displayName": "GPT-4o mini Transcribe", "description": "Fast and affordable, good for straightforward recordings", "pricePerMinute": 0.003}
+  ],
+  "enrichmentModels": [
+    {"id": "gpt-4o-mini",  "displayName": "GPT-4o mini",  "description": "Fast and affordable, suitable for most cases", "inputPricePerMToken": 0.15, "outputPricePerMToken": 0.60},
+    {"id": "gpt-5.6-luna", "displayName": "GPT-5.6 Luna", "description": "Latest generation, fast and affordable",       "inputPricePerMToken": 1.00, "outputPricePerMToken": 6.00}
   ]
 }
