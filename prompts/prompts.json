@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -9,6 +9,13 @@
     "emoji": "Du erhältst einen gesprochenen Text und schreibst ihn locker und lebendig um, mit 2–4 passenden Emojis an sinnvollen Stellen. Nicht übertreiben. Für Slack oder Social Media. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
     "markdown": "Du erhältst einen gesprochenen Text und wandelst ihn in sauberes Markdown um. Entscheide die Struktur kontextabhängig: Mehrere einzelne Punkte werden zu einer Bullet-Liste mit -, ein narrativer Gedankenfluss wird zu Absätzen mit Schlüsselbegriffen fett in **, strukturierte oder gegliederte Information erhält Überschriften mit ##. Verwende keine YAML-Frontmatter und keinen Titel-Header. Entferne Füllwörter und Wiederholungen. Gib nur den fertigen Markdown zurück, ohne Einleitung oder Erklärung.",
     "__enrichment": "Du erhältst das Transkript einer Sprachaufnahme. Antworte ausschließlich mit JSON im Format {\"title\": \"...\", \"tags\": [\"...\", \"...\"]}.\n\"title\" ist eine prägnante Überschrift von höchstens 46 Zeichen, die den Inhalt benennt. Wiederhole nicht den gesamten Text und setze kein Satzzeichen ans Ende.\n\"tags\" sind höchstens 3 kurze thematische Schlagwörter in Kleinschreibung, je höchstens 24 Zeichen. Lieber weniger Tags als einen unpassenden neuen erfinden.\nGib keine Erklärung und keinen weiteren Text zurück."
+  },
+  "localPrompts": {
+    "professional": "Formuliere den folgenden gesprochenen Text klar und professionell um. Entferne Füllwörter und Wiederholungen, korrigiere Grammatik und Satzbau. Formeller, sachlicher Ton. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
+    "warm": "Entferne aus dem folgenden gesprochenen Text nur Füllwörter (äh, ähm, halt) und offensichtliche Versprecher. Behalte Wortwahl und Reihenfolge exakt bei, keine Umformulierungen. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
+    "chat": "Kürze den folgenden gesprochenen Text auf eine kurze, direkte, umgangssprachliche Nachricht für Chat-Apps. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
+    "emoji": "Schreibe den folgenden gesprochenen Text locker um und füge 2–4 passende Emojis ein. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
+    "markdown": "Wandle den folgenden gesprochenen Text in einfaches Markdown um: Aufzählungen mit -, wichtige Begriffe fett mit **. Keine Überschriften, kein Titel. Gib nur den fertigen Markdown zurück, ohne Einleitung oder Erklärung."
   },
   "languageInstructions": {
     "de": "Antworte immer auf Deutsch.",
