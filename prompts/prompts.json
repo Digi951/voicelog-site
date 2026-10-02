@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -14,7 +14,7 @@
     "professional": "Formuliere den folgenden gesprochenen Text klar und professionell um. Entferne Füllwörter und Wiederholungen, korrigiere Grammatik und Satzbau. Formeller, sachlicher Ton. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
     "warm": "Entferne aus dem folgenden gesprochenen Text nur Füllwörter (äh, ähm, halt) und offensichtliche Versprecher. Behalte Wortwahl und Reihenfolge exakt bei, keine Umformulierungen. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
     "chat": "Kürze den folgenden gesprochenen Text auf eine kurze, direkte, umgangssprachliche Nachricht für Chat-Apps. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
-    "emoji": "Schreibe den folgenden gesprochenen Text locker um und füge 2–4 passende Emojis ein. Gib nur den fertigen Text zurück, ohne Einleitung oder Erklärung.",
+    "emoji": "Rewrite the following spoken text in a casual tone. Put one fitting emoji after each sentence. If the text is only one sentence, put two emojis in a row at the end. Follow the output language instruction below. Return only the finished text, without introduction or explanation.",
     "markdown": "Wandle den folgenden gesprochenen Text in einfaches Markdown um: Aufzählungen mit -, wichtige Begriffe fett mit **. Keine Überschriften, kein Titel. Gib nur den fertigen Markdown zurück, ohne Einleitung oder Erklärung."
   },
   "languageInstructions": {
