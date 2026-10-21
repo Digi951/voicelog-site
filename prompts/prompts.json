@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -30,18 +30,18 @@
     "fi": "Vastaa aina suomeksi."
   },
   "models": [
-    {"id": "gpt-4o-mini",   "displayName": "GPT-4o mini",   "description": "Fast and affordable, suitable for most cases",       "inputPricePerMToken": 0.15, "outputPricePerMToken": 0.60},
-    {"id": "gpt-4o",        "displayName": "GPT-4o",        "description": "More precise, especially for complex texts",         "inputPricePerMToken": 2.50, "outputPricePerMToken": 10.0},
-    {"id": "gpt-5.6-luna",  "displayName": "GPT-5.6 Luna",  "description": "Latest generation, fast and affordable",             "inputPricePerMToken": 1.00, "outputPricePerMToken": 6.00},
-    {"id": "gpt-5.6-terra", "displayName": "GPT-5.6 Terra", "description": "Latest generation, balanced for everyday tasks",     "inputPricePerMToken": 2.50, "outputPricePerMToken": 15.0},
-    {"id": "gpt-5.6-sol",   "displayName": "GPT-5.6 Sol",   "description": "OpenAI's most powerful model for demanding tasks",   "inputPricePerMToken": 5.00, "outputPricePerMToken": 30.0}
+    {"id": "gpt-6-luna",    "displayName": "GPT-6 Luna",    "description": "Latest generation, fast and affordable",           "inputPricePerMToken": 0.10, "outputPricePerMToken": 0.50},
+    {"id": "gpt-6.1-sol",   "displayName": "GPT-6.1 Sol",   "description": "Latest generation, balanced for everyday tasks",   "inputPricePerMToken": 2.00, "outputPricePerMToken": 10.0},
+    {"id": "gpt-6-astra",   "displayName": "GPT-6 Astra",   "description": "OpenAI's most powerful model for demanding tasks", "inputPricePerMToken": 10.0, "outputPricePerMToken": 50.0},
+    {"id": "gpt-5.6-luna",  "displayName": "GPT-5.6 Luna",  "description": "Previous generation, fast and affordable",         "inputPricePerMToken": 0.20, "outputPricePerMToken": 1.20},
+    {"id": "gpt-5.6-terra", "displayName": "GPT-5.6 Terra", "description": "Previous generation, balanced for everyday tasks", "inputPricePerMToken": 2.00, "outputPricePerMToken": 12.0},
+    {"id": "gpt-5.6-sol",   "displayName": "GPT-5.6 Sol",   "description": "Previous generation, for demanding tasks",         "inputPricePerMToken": 4.00, "outputPricePerMToken": 20.0}
   ],
   "transcriptionModels": [
-    {"id": "gpt-transcribe",         "displayName": "GPT Transcribe",         "description": "Latest generation, most accurate for everyday recordings", "pricePerMinute": 0.0045},
-    {"id": "gpt-4o-mini-transcribe", "displayName": "GPT-4o mini Transcribe", "description": "Fast and affordable, good for straightforward recordings", "pricePerMinute": 0.003}
+    {"id": "gpt-transcribe", "displayName": "GPT Transcribe", "description": "Latest generation, most accurate for everyday recordings", "pricePerMinute": 0.0045}
   ],
   "enrichmentModels": [
-    {"id": "gpt-4o-mini",  "displayName": "GPT-4o mini",  "description": "Fast and affordable, suitable for most cases", "inputPricePerMToken": 0.15, "outputPricePerMToken": 0.60},
-    {"id": "gpt-5.6-luna", "displayName": "GPT-5.6 Luna", "description": "Latest generation, fast and affordable",       "inputPricePerMToken": 1.00, "outputPricePerMToken": 6.00}
+    {"id": "gpt-6-luna",   "displayName": "GPT-6 Luna",   "description": "Latest generation, fast and affordable",   "inputPricePerMToken": 0.10, "outputPricePerMToken": 0.50},
+    {"id": "gpt-5.6-luna", "displayName": "GPT-5.6 Luna", "description": "Previous generation, fast and affordable", "inputPricePerMToken": 0.20, "outputPricePerMToken": 1.20}
   ]
 }
