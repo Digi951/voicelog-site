@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "minAppBuild": 1,
   "transcriptionEndpoint": "https://api.openai.com/v1/audio/transcriptions",
   "prompts": {
@@ -32,16 +32,13 @@
   "models": [
     {"id": "gpt-6-luna",    "displayName": "GPT-6 Luna",    "description": "Latest generation, fast and affordable",           "inputPricePerMToken": 0.10, "outputPricePerMToken": 0.50},
     {"id": "gpt-6.1-sol",   "displayName": "GPT-6.1 Sol",   "description": "Latest generation, balanced for everyday tasks",   "inputPricePerMToken": 2.00, "outputPricePerMToken": 10.0},
-    {"id": "gpt-6-astra",   "displayName": "GPT-6 Astra",   "description": "OpenAI's most powerful model for demanding tasks", "inputPricePerMToken": 10.0, "outputPricePerMToken": 50.0},
-    {"id": "gpt-5.6-luna",  "displayName": "GPT-5.6 Luna",  "description": "Previous generation, fast and affordable",         "inputPricePerMToken": 0.20, "outputPricePerMToken": 1.20},
-    {"id": "gpt-5.6-terra", "displayName": "GPT-5.6 Terra", "description": "Previous generation, balanced for everyday tasks", "inputPricePerMToken": 2.00, "outputPricePerMToken": 12.0},
-    {"id": "gpt-5.6-sol",   "displayName": "GPT-5.6 Sol",   "description": "Previous generation, for demanding tasks",         "inputPricePerMToken": 4.00, "outputPricePerMToken": 20.0}
+    {"id": "gpt-6.1-terra", "displayName": "GPT-6.1 Terra", "description": "Latest generation, balanced and economical",         "inputPricePerMToken": 1.00, "outputPricePerMToken": 5.0},
+    {"id": "gpt-6-astra",   "displayName": "GPT-6 Astra",   "description": "OpenAI's most powerful model for demanding tasks", "inputPricePerMToken": 10.0, "outputPricePerMToken": 50.0}
   ],
   "transcriptionModels": [
     {"id": "gpt-transcribe", "displayName": "GPT Transcribe", "description": "Latest generation, most accurate for everyday recordings", "pricePerMinute": 0.0045}
   ],
   "enrichmentModels": [
-    {"id": "gpt-6-luna",   "displayName": "GPT-6 Luna",   "description": "Latest generation, fast and affordable",   "inputPricePerMToken": 0.10, "outputPricePerMToken": 0.50},
-    {"id": "gpt-5.6-luna", "displayName": "GPT-5.6 Luna", "description": "Previous generation, fast and affordable", "inputPricePerMToken": 0.20, "outputPricePerMToken": 1.20}
+    {"id": "gpt-6-luna",   "displayName": "GPT-6 Luna",   "description": "Latest generation, fast and affordable",   "inputPricePerMToken": 0.10, "outputPricePerMToken": 0.50}
   ]
 }
